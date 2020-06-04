@@ -45,7 +45,6 @@ jobs:
           
           sudo chmod 777 /etc/elasticsearch/elasticsearch.yml
           sudo sed -i /^node.max_local_storage_nodes/d /etc/elasticsearch/elasticsearch.yml
-          sudo sed -i /^cluster.routing.allocation.disk.threshold_enabled/d /etc/elasticsearch/elasticsearch.yml
           sudo /etc/init.d/elasticsearch start
           sleep 30
           cd sql
